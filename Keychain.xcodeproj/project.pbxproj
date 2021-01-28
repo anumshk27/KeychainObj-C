@@ -14,6 +14,8 @@
 		CCC46EAA25C1D1E700E1E93B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC46EA925C1D1E700E1E93B /* Assets.xcassets */; };
 		CCC46EAD25C1D1E700E1E93B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC46EAB25C1D1E700E1E93B /* LaunchScreen.storyboard */; };
 		CCC46EB025C1D1E700E1E93B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC46EAF25C1D1E700E1E93B /* main.m */; };
+		CCC46EB925C1D20C00E1E93B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC46EB825C1D20C00E1E93B /* Security.framework */; };
+		CCC46EBB25C1D28300E1E93B /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC46EBA25C1D28300E1E93B /* CoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		CCC46EAC25C1D1E700E1E93B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCC46EAE25C1D1E700E1E93B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCC46EAF25C1D1E700E1E93B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CCC46EB825C1D20C00E1E93B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CCC46EBA25C1D28300E1E93B /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCC46EB925C1D20C00E1E93B /* Security.framework in Frameworks */,
+				CCC46EBB25C1D28300E1E93B /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +53,7 @@
 			children = (
 				CCC46E9C25C1D1E600E1E93B /* Keychain */,
 				CCC46E9B25C1D1E600E1E93B /* Products */,
+				CCC46EB725C1D20C00E1E93B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +81,15 @@
 				CCC46EAF25C1D1E700E1E93B /* main.m */,
 			);
 			path = Keychain;
+			sourceTree = "<group>";
+		};
+		CCC46EB725C1D20C00E1E93B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCC46EBA25C1D28300E1E93B /* CoreServices.framework */,
+				CCC46EB825C1D20C00E1E93B /* Security.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,12 +308,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EU2T75VWJ8;
 				INFOPLIST_FILE = Keychain/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.Keychain;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tplmaps.Keychain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -309,12 +327,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EU2T75VWJ8;
 				INFOPLIST_FILE = Keychain/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.Keychain;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tplmaps.Keychain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
